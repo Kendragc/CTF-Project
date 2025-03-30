@@ -1,3 +1,10 @@
+// Hint function for the button
+function showHint() {
+  const hint = "Try decoding Base64 strings in the console, inspecting cookies, and checking localStorage.";
+  document.getElementById("hintArea").innerText = hint;
+  document.getElementById("hintArea").style.display = "block";
+}
+
 const d = "U3VwZXJfTm90X1RoZV9GbGFn";
 const e = "Q1RGeydHMDBkX0owOF95MHVf"; 
 
