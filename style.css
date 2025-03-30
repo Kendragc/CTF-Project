@@ -23,3 +23,15 @@ button {
 button:hover {
   background-color: #005f99;
 }
+
+/* Hint dropdown animation */
+#hintArea {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+#hintArea.hint-shown {
+  max-height: 100px;
+  transition: max-height 0.5s ease-in;
+}
