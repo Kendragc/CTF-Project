@@ -1,8 +1,15 @@
-// Hint function for the button
+// Hint button logic with dropdown animation
 function showHint() {
-  const hint = "Try decoding Base64 strings in the console, inspecting cookies, and checking localStorage.";
-  document.getElementById("hintArea").innerText = hint;
-  document.getElementById("hintArea").style.display = "block";
+  const hintBox = document.getElementById("hintArea");
+  const hintText = document.getElementById("hintText");
+
+  hintText.innerText = "Try decoding Base64 strings in the console, inspecting cookies, and checking localStorage.";
+
+  if (hintBox.classList.contains("hint-shown")) {
+    hintBox.classList.remove("hint-shown");
+  } else {
+    hintBox.classList.add("hint-shown");
+  }
 }
 
 const d = "U3VwZXJfTm90X1RoZV9GbGFn";
