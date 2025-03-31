@@ -13,7 +13,7 @@ function showHint() {
 }
 
 const d = "U3VwZXJfTm90X1RoZV9GbGFn";
-const e = "Q1RGeydHMDBkX0owOF95MHVf"; 
+const e = "aXRjMTAxeydHMDBkX0owOF95MHVf"; 
 
 console.log("Need help? Base64 can be decoded, but not all clues are real...");
 
