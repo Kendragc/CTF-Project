@@ -17,7 +17,7 @@ const e = "aXRjMTAxe0cwMGRfSjA4X3kwdV8=";
 
 console.log("Need help? Base64 can be decoded, but not all clues are real...");
 
-document.cookie = "mislead=U29ycnlfbm90X3RoaXNfb25l"; 
+document.cookie = "flag=U29ycnlfbm90X3RoaXNfb25l"; 
 
 // Obfuscated local storage logic
 (function () {
