@@ -19,10 +19,6 @@ console.log("Need help? Base64 can be decoded, but not all clues are real...");
 
 document.cookie = "mislead=U29ycnlfbm90X3RoaXNfb25l"; 
 
-setTimeout(() => {
-  document.cookie = "ctfHint=sbhaQ_gur3_s14T!}"; 
-}, 3000); 
-
 // Obfuscated local storage logic
 (function () {
   const p = atob("X2YwdW5EX3RoM18="); 
