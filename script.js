@@ -21,7 +21,7 @@ document.cookie = "flag=U29ycnlfbm90X3RoaXNfb25l";
 
 // Obfuscated local storage logic
 (function () {
-  const p = atob("dzMzbmkzX2h1N19qdW4xMHJf"); 
+  const p = atob("dzMzbmkzX2h1N19qdW4xMHJfeTB1Xw=="); 
   localStorage.setItem("m", p);
 })();
 
