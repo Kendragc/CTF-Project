@@ -11,26 +11,53 @@
       text-align: center;
       padding: 50px;
     }
-    img {
-      width: 60%;
+    video {
+      width: 80%;
+      max-width: 700px;
       border-radius: 12px;
-      margin-top: 20px;
+      margin-top: 30px;
+    }
+
+    .fake-button {
+      margin-top: 40px;
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #00b894;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .fake-button:hover {
+      background-color: #009874;
     }
   </style>
 </head>
 <body>
   <h1>The first part of the flag is...</h1>
   <p>Just kidding 😎</p>
-  <p>You’ve officially been Rickrolled.</p>
+  <p>You’ve been Rickrolled.</p>
   
-  <!-- Rickroll Video Embedded -->
-  <iframe width="560" height="315" 
-    src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&controls=1" 
-    title="YouTube video player" 
-    allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-  </iframe>
+  <!-- Rickroll video autoplaying silently -->
+  <video autoplay loop muted>
+    <source src="funny video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
   <p style="margin-top: 40px;"><em>Some paths lead to treasure... others to timeless tunes.</em></p>
+
+<!-- FAKE HINT BUTTON -->
+  <button class="fake-button" onclick="enableSound()">Just kidding. Here's the hint.</button>
+
+  <script>
+    function justKidding() {
+      const video = document.getElementById("rickroll");
+      video.muted = false;
+      video.play();
+      alert("Rickrolled again. There is no hint. 🕺");
+    }
+  </script>
 </body>
 </html>
