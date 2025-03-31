@@ -25,6 +25,7 @@ setTimeout(() => {
 
 // Obfuscated local storage logic
 (function () {
-  const x = ["_f0unD", "th3"];
-  localStorage.setItem("midFlag", `${x[0]}_${x[1]}_`);
+  const p = atob("X2YwdW5EX3RoM18="); 
+  localStorage.setItem("m", p);
 })();
+
