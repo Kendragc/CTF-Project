@@ -33,6 +33,18 @@
     .fake-button:hover {
       background-color: #009874;
     }
+    #rickrollMessage {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease-out;
+      margin-top: 20px;
+      font-style: italic;
+      color: #f1c40f;
+    }
+
+    #rickrollMessage.show {
+      max-height: 100px;
+    }
   </style>
 </head>
 <body>
@@ -43,20 +55,24 @@
   <!-- Rickroll video autoplaying silently -->
   <video autoplay loop muted>
     <source src="funny video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
   </video>
 
   <p style="margin-top: 40px;"><em>Some paths lead to treasure... others to timeless tunes.</em></p>
 
-<!-- FAKE HINT BUTTON -->
-  <button class="fake-button" onclick="enableSound()">Just kidding. Here's the hint.</button>
+ <!-- Button to unmute and play -->
+  <button class="fake-button" onclick="unmuteVideo()">Just kidding. Here's the hint.</button>
+
+  <!-- Hidden message -->
+  <div id="rickrollMessage">Rickrolled again. There is no hint. 🕺</div>
 
   <script>
-    function justKidding() {
-      const video = document.getElementById("rickroll");
+    function unmuteVideo() {
+      const video = document.getElementById("rickrollVideo");
+      const message = document.getElementById("rickrollMessage");
+
       video.muted = false;
       video.play();
-      alert("Rickrolled again. There is no hint. 🕺");
+      message.classList.add("show");
     }
   </script>
 </body>
