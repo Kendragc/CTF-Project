@@ -21,7 +21,7 @@ document.cookie = "mislead=U29ycnlfbm90X3RoaXNfb25l";
 
 // Obfuscated local storage logic
 (function () {
-  const p = atob("X2YwdW5EX3RoM18="); 
+  const p = atob("dzMzbmkzX2h1N19qdW4xMHJf"); 
   localStorage.setItem("m", p);
 })();
 
