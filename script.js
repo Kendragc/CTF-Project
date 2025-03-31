@@ -20,7 +20,7 @@ console.log("Need help? Base64 can be decoded, but not all clues are real...");
 document.cookie = "mislead=U29ycnlfbm90X3RoaXNfb25l"; 
 
 setTimeout(() => {
-  document.cookie = "ctfHint=sbhaQ_gur3_s14T!}"; // rot13 -> found_the3_f14G!}
+  document.cookie = "ctfHint=sbhaQ_gur3_s14T!}"; 
 }, 3000); 
 
 // Obfuscated local storage logic
