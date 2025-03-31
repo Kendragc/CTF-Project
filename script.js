@@ -3,7 +3,7 @@ function showHint() {
   const hintBox = document.getElementById("hintArea");
   const hintText = document.getElementById("hintText");
 
-  hintText.innerText = "Try decoding Base64 strings in the console, inspecting cookies, and checking localStorage.";
+   hintText.innerText = "Need help? Inspecting elements and checking the console might come in handy...";
 
   if (hintBox.classList.contains("hint-shown")) {
     hintBox.classList.remove("hint-shown");
